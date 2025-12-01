@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorative Handmade Bottles</title>
+
+    <style>
+        /* ✨ Global Styling */
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #FFFFF0;
+            color: #333;
+        }
+
+        /* ✨ Gradient Header */
+        header {
+            background: linear-gradient(135deg, green, #90EE90);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* ✨ Navigation Bar */
+        .nav {
+            text-align: center;
+            background: #ee2400;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .nav a:hover {
+            color: red;
+            text-shadow: 0px 0px 6px rgba(255,255,255,0.8);
+        }
+
+        /* ✨ Section Titles */
+        .section-title {
+            margin: 40px 0 15px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: red;
+        }
+
+        /* ✨ See More Links */
+        .see-more {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .see-more a {
+            font-size: 18px;
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .see-more a:hover {
+            color: #db5aaa;
+        }
+
+        /* ✨ Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 20px 30px;
+        }
+
+        /* ✨ Product Cards */
+        .product-card {
+            background: white;
+            padding: 18px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+            transition: 0.25s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.18);
+        }
+
+        /* ✨ Bottle Images */
+        .product-card img {
+            width: auto;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* ✨ Price Style */
+        .price {
+            font-size: 22px;
+            margin-top: 12px;
+            font-weight: bold;
+            color: green;
+        }
+
+        /* ✨ Footer */
+        footer {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 28px;
+            margin-top: 50px;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ✨ Show / Hide Pages */
+        .page-section {
+            display: none;
+        }
+
+        #home {
+            display: block;
+        }
+    </style>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.page-section').forEach(sec => sec.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</head>
+
+<body>
+
+<header>Decorative Handmade Bottles</header>
+
+<div class="nav">
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('christmas')">Christmas Special</a>
+    <a onclick="showSection('everyday')">Everyday Collection</a>
+</div>
+
+<!-- 🏠 HOME PAGE -->
+<div id="home" class="page-section">
+    <div class="section-title">Christmas Special</div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/janelleandrea1998-arch/test-website/refs/heads/main/images.jpg">
+            <div class="price">₹450</div>
+        </div>
+		
+		<div class="product-card">
+            <img src="https://raw.githubusercontent.com/janelleandrea1998-arch/test-website/refs/heads/main/images.jpg">
+            <div class="price">₹450</div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/janelleandrea1998-arch/test-website/refs/heads/main/Test.jpg">
+            <div class="price">₹480</div>
+        </div>
+    </div>
+
+    <div class="see-more">
+        <a onclick="showSection('christmas')">See More →</a>
+    </div>
+
+    <div class="section-title">Everyday Collection</div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="normal1.jpg">
+            <div class="price">₹350</div>
+        </div>
+		
+		<div class="product-card">
+            <img src="normal1.jpg">
+            <div class="price">₹350</div>
+        </div>
+
+        <div class="product-card">
+            <img src="normal2.jpg">
+            <div class="price">₹370</div>
+        </div>
+    </div>
+
+    <div class="see-more">
+        <a onclick="showSection('everyday')">See More →</a>
+    </div>
+</div>
+
+
+<!-- 🎄 CHRISTMAS PAGE -->
+<div id="christmas" class="page-section">
+    <div class="section-title">Christmas Special – Full Collection</div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/janelleandrea1998-arch/test-website/refs/heads/main/images.jpg">
+            <div class="price">₹450</div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://raw.githubusercontent.com/janelleandrea1998-arch/test-website/refs/heads/main/Test.jpg">
+            <div class="price">₹480</div>
+        </div>
+
+        <div class="product-card">
+            <img src="christmas3.jpg">
+            <div class="price">₹500</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 🌼 EVERYDAY COLLECTION PAGE -->
+<div id="everyday" class="page-section">
+    <div class="section-title">Everyday Collection – Full Collection</div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="normal1.jpg">
+            <div class="price">₹350</div>
+        </div>
+
+        <div class="product-card">
+            <img src="normal2.jpg">
+            <div class="price">₹370</div>
+        </div>
+
+        <div class="product-card">
+            <img src="normal3.jpg">
+            <div class="price">₹399</div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    Contact: +91 9822158494 | Instagram: @yourpage | Email: handmadebottles@example.com
+</footer>
+
+</body>
+</html>
